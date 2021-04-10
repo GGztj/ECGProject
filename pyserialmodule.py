@@ -105,3 +105,11 @@ class Communication():
                             print("接收ascii数据：", data)
             except Exception as e:
                 print("异常报错：", e)
+
+
+Communication.Print_Used_Com()
+Ret = False  # 是否创建成功标志
+
+Engine1 = Communication("com12", 115200, 0.5)
+if (Ret):
+    Engine1.Recive_data(0)
